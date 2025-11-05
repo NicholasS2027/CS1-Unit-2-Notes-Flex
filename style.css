@@ -1,1 +1,26 @@
+.flex-item {
+    background: lightblue;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
 
+/* Use the OUTER DIV to control the arrangement of INNER items */
+.flex-container {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    border: 2px solid red;
+    height: 100px;
+}
+
+/* if you change the flex-direction, the MAIN AXIS and the CROSS AXIS switch too */
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical */
+    align-items: center; /* horizontal */
+    border: 2px solid blue;
+    height: 200px;
+}
